@@ -42,7 +42,7 @@ int parse_fixed(const char* str, fixed_point* result) {
 }
 
 void run_cli_interface() {
-    printf("Эмулятор арифметических операций с фиксированной запятой (Q16.16)\n");
+    printf("Эмулятор арифметических операций с фиксированной запятой\n");
     print_help();
     
     char line[256];
