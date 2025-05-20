@@ -65,9 +65,10 @@ void run_cli_interface() {
         }
         
         char* token = strtok(line, " \t\n");  // первый токен – команда
-        int args_parsed = 0;
-        int valid = 1;
-        a = 0; b = 0;
+        int args_parsed = 0;   // Количество успешно распознанных аргументов
+        int valid = 1;         // Флаг корректности ввода
+        a = 0; b = 0;          // Инициализация переменных типа fixed_point для последующего использования
+
         
         token = strtok(NULL, " \t\n");
         while (token != NULL && args_parsed < 2) {
